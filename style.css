@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f3f4f6;
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 400px; 
+  height: 520px; 
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  background-color: #4e6bff;
+  color: #fff;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icons span {
+  font-size: 22px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.weeks {
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 8px 0;
+}
+
+.weeks li {
+  color: #333;
+  font-weight: 600;
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  padding: 6px 0;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  width: 100%;
+}
+
+.days li {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  padding: 12px; 
+  text-align: left; 
+  position: relative; 
+  list-style-type: none; 
+}
+
+.days li span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.days li:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.05);
+}
